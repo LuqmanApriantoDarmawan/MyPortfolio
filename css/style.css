@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 :root{
-    --green: #0554F2;
+    --blue: #0554F2;
     --black:#444;
     --light-color:#777;
     --bg-color:#e6e6e6;
     --border:.1rem solid rgba(0,0,0,.2);
-    --box-shadow:.4rem .4rem 1rem #ccc,
-                -.4rem -.4rem 1rem #fff;
-    --box-shadow-inset:.4rem .4rem 1rem #ccc inset,
-                        -.4rem -.4rem 1rem #fff inset;
+    --box-shadow:.4rem .4rem 1rem #777,
+                -.4rem -.4rem 1rem #ccc;
+    --box-shadow-inset:.4rem .4rem 1rem #fff inset,
+                        -.4rem -.4rem 1rem #ccc inset;
 }
 
 *{
@@ -62,7 +62,7 @@ section{
 
 .btn:hover{
     box-shadow: var(--box-shadow-inset);
-    color:var(--green);
+    color:var(--blue);
 }
 
 .heading{
@@ -74,7 +74,7 @@ section{
 }
 
 .heading span{
-    color:var(--green);
+    color:var(--blue);
     text-transform: uppercase;
 }
 
@@ -105,7 +105,7 @@ section{
 }
 
 .header .user p{
-    color:var(--green);
+    color:var(--blue);
     font-size: 1.5rem;
 }
 
@@ -125,7 +125,7 @@ section{
 
 .header .navbar a:hover{
     box-shadow: var(--box-shadow-inset);
-    color: var(--green);
+    color: var(--blue);
 }
 
 #menu-btn{
@@ -146,7 +146,7 @@ section{
 }
 
 #menu-btn:hover{
-    color:var(--green);
+    color:var(--blue);
     box-shadow: var(--box-shadow-inset);
 }
 
@@ -188,7 +188,7 @@ section{
 
 .home .content p{
     font-size: 2rem;
-    color:var(--green);
+    color:var(--blue);
     padding-bottom: .5rem;
 }
 
@@ -213,7 +213,7 @@ section{
 
 .home .share a:hover{
     box-shadow: var(--box-shadow-inset);
-    color:var(--green);
+    color:var(--blue);
 }
 
 .about .row{
@@ -261,7 +261,7 @@ section{
 }
 
 .about .row .content h3 span{
-    color:var(--green);
+    color:var(--blue);
 }
 
 .about .row .content p{
@@ -299,7 +299,7 @@ section{
 .about .row .progress .bar span{
     display: block;
     height: 100%;
-    background: var(--green);
+    background: var(--blue);
     border-radius: 5rem;
 }
 
@@ -366,7 +366,7 @@ section{
     top:0; left: 0;
     height: 100%;
     width: 100%;
-    background: var(--green);
+    background: var(--blue);
     z-index: -1;
     clip-path: circle(9rem at 5% 0%);
     transition: .3s linear;
@@ -380,13 +380,13 @@ section{
     color:#fff;
 }
 
-.portfolio .box-container{
+.projects .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     gap:2rem;
 }
 
-.portfolio .box-container .box{
+.projects .box-container .box{
     height: 25rem;
     border-radius: .5rem;
     overflow:hidden;
@@ -395,37 +395,36 @@ section{
     border:1rem solid transparent;
 }
 
-.portfolio .box-container .box img{
+.projects .box-container .box img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.portfolio .box-container .box .content{
+.projects .box-container .box .content{
     position: absolute;
     top:0; left: 0;
     height: 100%;
     width: 100%;
-    background: var(--green);
     display: grid;
     place-items: center;
     transform: scale(0);
 }
 
-.portfolio .box-container .box:hover .content{
+.projects .box-container .box:hover .content{
     transform: scale(1);
 }
 
-.portfolio .box-container .box .content h3{
+.projects .box-container .box .content h3{
     font-size: 2rem;
-    color: #fff;
+    color: white;
     text-transform: uppercase;
     transform: translateY(-5rem);
     opacity: 0;
     transition-delay: .3s;
 }
 
-.portfolio .box-container .box:hover .content h3{
+.projects .box-container .box:hover .content h3{
     transform: translateY(0rem);
     opacity: 1;
 }
@@ -434,7 +433,7 @@ section{
     margin-top: 1rem;
     display: inline-block;
     padding:1rem 3.5rem;
-    border-radius: .5rem;
+    border-radius: 5rem;
     font-size: 1.4rem;
     cursor: pointer;
     background: #fff;
@@ -443,7 +442,7 @@ section{
 
 .btnmp:hover{
     box-shadow: var(--box-shadow);
-    color: var(--green);
+    color: var(--blue);
 }
 
 .contact form{
@@ -485,7 +484,7 @@ section{
 }
 
 .credits span{
-    color: var(--green);
+    color: var(--blue);
 }
 
 /* media queries  */
