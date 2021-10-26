@@ -216,115 +216,141 @@ section{
     color:var(--blue);
 }
 
-.about .row{
+.about .row-1{
     display: flex;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-    gap:2rem;
-}
-
-.about .row .box-container{
-    flex:1 1 40rem;
-    display: flex;
-    gap:1.5rem;
     flex-wrap: wrap;
+    gap:1.5rem;
+    padding-bottom: 2rem;
 }
 
-.about .row .box-container .box{
-    flex:1 1 18rem;
-    text-align: center;
-    padding:2rem;
-    border-radius: .5rem;
-    box-shadow: var(--box-shadow);
+.about .row-1 .image{
+    flex:1 1 25rem;
 }
 
-.about .row .box-container .box h3{
-    font-size: 5rem;
+.about .row-1 .image img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+    border:1rem solid var(--black);
+    border-radius: 3rem;
+    
+}
+
+.about .row-1 .content{
+    flex:1 1 50rem;
+}
+
+.about .row-1 .content span{
+    color: var(--blue);
+}
+
+.about .row-1 .content h3{
     color:var(--black);
-    line-height: 1.1;
+    font-size: 3.5rem;
 }
 
-.about .row .box-container .box p{
-    font-size: 1.7rem;
+.about .row-1 .content p{
     color:var(--light-color);
+    font-size: 1.7rem;
     padding:.5rem 0;
 }
 
-.about .row .content{
-    flex:1 1 40rem;
+.about .row-1 .content .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding: 0.5rem 0;
 }
 
-.about .row .content h3{
-    font-size: 3.5rem;
-    color:var(--black);
-    line-height: 1.8;
+.about .row-1 .content .box-container .box{
+    flex:1 1 20rem;
 }
 
-.about .row .content h3 span{
+.about .row-1 .content .box-container .box span{
     color:var(--blue);
 }
 
-.about .row .content p{
-    font-size: 1.7rem;
-    color:var(--light-color);
-    line-height: 1.8;
-    padding:1rem 0;
+.about .row-2{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    align-items: center;
 }
 
-.about .row:nth-child(3){
-    padding-top: 2rem;
-}
-
-.about .row .progress{
+.about .row-2 .skills{
     flex:1 1 40rem;
 }
 
-.about .row .progress h3{
-    color:var(--black);
-    font-weight: normal;
-    font-size: 2rem;
+.about .row-2 .skills .progress{
+    padding:1rem 0;
+}
+
+.about .row-2 .skills .progress h3{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    padding:.7rem 0;
+    font-size: 1.7rem;
+    color:var(--black);
+    font-weight: 400;
 }
 
-.about .row .progress .bar{
+.about .row-2 .skills .progress .bar{
     box-shadow: var(--box-shadow);
-    border-radius: 5rem;
-    height:2rem;
-    padding:.5rem;
-    margin:1rem 0;
-}
-
-.about .row .progress .bar span{
-    display: block;
-    height: 100%;
-    background: var(--blue);
+    width:100%;
+    background:var(--bg-color);
+    overflow:hidden;
+    height:1rem;
     border-radius: 5rem;
 }
 
-.about .row .progress .bar-1-1 span{
-    width: 90%;
+.about .row-2 .skills .progress .bar span{
+    display:block;
+    height:100%;
+    background:var(--blue);
+    border-radius: 5rem;
 }
 
-.about .row .progress .bar-1-2 span{
-    width: 80%;
+.about .row-2 .skills .progress:nth-child(1) .bar span{
+    width:85%;
 }
 
-.about .row .progress .bar-1-3 span{
-    width: 85%;
+.about .row-2 .skills .progress:nth-child(2) .bar span{
+    width:75%;
 }
 
-.about .row .progress .bar-2-1 span{
-    width: 95%;
+.about .row-2 .skills .progress:nth-child(3) .bar span{
+    width:80%;
 }
 
-.about .row .progress .bar-2-2 span{
-    width: 90%;
+.about .row-2 .skills .progress:nth-child(4) .bar span{
+    width:70%;
 }
 
-.about .row .progress .bar-2-3 span{
-    width: 83%;
+.about .row-2 .box-container{
+    flex:1 1 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.about .row-2 .box-container .box{
+    flex:1 1 18rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    padding:1.5rem;
+    border-radius: 1rem;
+}
+
+.about .row-2 .box-container .box h3{
+    color:var(--black);
+    font-size: 4rem;
+    line-height: 1.8;
+}
+
+.about .row-2 .box-container .box p{
+    color:var(--light-color);
+    font-size: 1.7rem;
+    padding: .5rem 0;
 }
 
 .services .box-container{
@@ -445,33 +471,89 @@ section{
     color: var(--blue);
 }
 
-.contact form{
-    margin:1rem auto;
-    max-width: 70rem;
-    border-radius: .5rem;
-    box-shadow: var(--box-shadow);
-    padding:2rem;
+.contact .icons-container{
+    display: flex;
+    gap:1.5rem;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
 }
 
-.contact form .box{
-    padding:1rem 1.5rem;
-    width:100%;
+.contact .icons-container .icons{
+    flex:1 1 25rem;
+    text-align: center;
+    padding:2rem;
+    background:var(--bg-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+}
+
+.contact .icons-container .icons i{
+    height:5rem;
+    width:5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    background: var(--blue);
+    color:#fff;
+    border-radius: 50%;
+}
+
+.contact .icons-container .icons h3{
+    color:var(--black);
+    font-size: 2rem;
+    padding:.5rem 0;
+    padding-top: 1rem;
+}
+
+.contact .icons-container .icons p{
+    color:var(--light-color);
+    font-size: 1.7rem;
+}
+
+.contact .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.contact .row form{
+    flex:1 1 55rem;
+    padding:1.5rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+}
+
+.contact .row .map{
+    flex:1 1 25rem;
+    width: 100%m;
+    box-shadow: var(--box-shadow);
+    
+}
+
+.contact .row form .box,
+.contact .row form textarea{
+    width: 100%;
+    box-shadow: var(--box-shadow);
     background: none;
     color:var(--black);
-    font-size: 1.6rem;
     text-transform: none;
+    font-size: 1.6rem;
+    padding:1rem 1.5rem;
     margin:.7rem 0;
-    box-shadow: var(--box-shadow);
-    border-radius: .5rem;
 }
 
-.contact form textarea{
+.contact .row form textarea{
     height: 20rem;
     resize: none;
 }
 
-.contact form .box:focus{
-    box-shadow: var(--box-shadow-inset);
+.contact .row form .box:focus,
+.contact .row form textarea:focus{
+    border-color: var(--box-shadow-inset);
+}
+
+.contact .row form .box::placeholder,
+.contact .row form textarea::placeholder{
+    text-transform: capitalize;
 }
 
 .credits{
